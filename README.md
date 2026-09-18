@@ -16,9 +16,8 @@ A clean Persian RTL digital bookshelf featuring Iranian and world classics, buil
 
 🖼️ Project Preview
 
-"Silent Shelf Preview" (Screenshot.png)
-
-👉 "View Full Screenshot" (https://github.com/Shabnamnoori/silent-shelf/blob/main/Screenshot.png)
+![Silent Shelf Preview]
+(Screenshot.png)
 
 ---
 
