@@ -16,8 +16,7 @@ A clean Persian RTL digital bookshelf featuring Iranian and world classics, buil
 
 🖼️ Project Preview
 
-![Silent Shelf Preview]
-(Screenshot.png)
+![Silent Shelf Preview](Screenshot.png)
 
 ---
 
