@@ -1,0 +1,682 @@
+/* ==========================================
+   قفسه بی‌صدا - استایل اصلی
+   ========================================== */
+
+/* فونت فارسی */
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;700&display=swap');
+
+/* متغیرهای رنگی */
+:root {
+    --color-dark-green: #0B3D2E;
+    --color-medium-green: #1F5C4A;
+    --color-light-green: #D8E3D2;
+    --color-cream: #F5F1E8;
+    --color-gold: #C2A878;
+    --color-white: #FFFFFF;
+    --color-text: #2C2C2C;
+    --color-text-light: #5A5A5A;
+    --shadow: 0 2px 8px rgba(11, 61, 46, 0.15);
+}
+
+/* ریست پایه */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* پایه صفحه */
+body {
+    font-family: 'Vazirmatn', 'IRANSans', Tahoma, sans-serif;
+    background-color: var(--color-cream);
+    color: var(--color-text);
+    direction: rtl;
+    text-align: right;
+    line-height: 1.8;
+    font-size: 16px;
+}
+
+/* ==========================================
+   هدر
+   ========================================== */
+
+header {
+    background-color: var(--color-dark-green);
+    color: var(--color-white);
+    padding: 0;
+    border-bottom: 4px solid var(--color-gold);
+}
+
+.header-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.logo-img {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    border: 2px solid var(--color-gold);
+    padding: 4px;
+    background: rgba(194, 168, 120, 0.1);
+}
+
+.site-title-area h1 {
+    font-family: 'Vazirmatn', serif;
+    font-size: 2.2rem;
+    color: var(--color-gold);
+    font-weight: 700;
+    letter-spacing: 1px;
+    line-height: 1.2;
+}
+
+.site-title-area p {
+    font-size: 0.88rem;
+    color: var(--color-light-green);
+    margin-top: 3px;
+    font-weight: 300;
+}
+
+/* ==========================================
+   ناوبری
+   ========================================== */
+
+nav {
+    background-color: var(--color-medium-green);
+    border-top: 1px solid rgba(194, 168, 120, 0.3);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    color: var(--color-light-green);
+    text-decoration: none;
+    padding: 13px 25px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: background-color 0.2s, color 0.2s;
+    border-left: 1px solid rgba(194, 168, 120, 0.2);
+}
+
+nav ul li:last-child a {
+    border-left: none;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    background-color: var(--color-dark-green);
+    color: var(--color-gold);
+}
+
+/* ==========================================
+   محتوای اصلی
+   ========================================== */
+
+main {
+    max-width: 1100px;
+    margin: 35px auto;
+    padding: 0 25px;
+}
+
+/* ==========================================
+   بنر بالای صفحه
+   ========================================== */
+
+.page-banner {
+    text-align: center;
+    margin-bottom: 35px;
+    padding: 25px;
+    background: linear-gradient(135deg, var(--color-dark-green), var(--color-medium-green));
+    border-radius: 6px;
+    border: 1px solid var(--color-gold);
+}
+
+.page-banner img {
+    max-width: 100%;
+    border-radius: 4px;
+}
+
+.page-banner h2 {
+    color: var(--color-gold);
+    font-size: 1.9rem;
+    margin-bottom: 8px;
+}
+
+.page-banner p {
+    color: var(--color-light-green);
+    font-size: 1rem;
+}
+
+/* ==========================================
+   بخش‌های محتوا
+   ========================================== */
+
+.section {
+    background-color: var(--color-white);
+    border: 1px solid var(--color-light-green);
+    border-radius: 6px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: var(--shadow);
+}
+
+.section h2 {
+    color: var(--color-dark-green);
+    font-size: 1.5rem;
+    margin-bottom: 18px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--color-gold);
+}
+
+.section h3 {
+    color: var(--color-medium-green);
+    font-size: 1.2rem;
+    margin-bottom: 12px;
+    margin-top: 20px;
+}
+
+.section p {
+    color: var(--color-text);
+    margin-bottom: 12px;
+    font-size: 0.97rem;
+    line-height: 2;
+}
+
+/* ==========================================
+   تصاویر
+   ========================================== */
+
+.img-book {
+    width: 140px;
+    height: 195px;
+    object-fit: cover;
+    border: 2px solid var(--color-gold);
+    border-radius: 4px;
+    box-shadow: 3px 3px 10px rgba(11, 61, 46, 0.2);
+    transition: transform 0.2s;
+}
+
+.img-book:hover {
+    transform: translateY(-4px);
+}
+
+.img-library {
+    width: 100%;
+    border-radius: 5px;
+    border: 2px solid var(--color-gold);
+    margin-bottom: 15px;
+}
+
+.books-showcase {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.books-showcase figure {
+    text-align: center;
+    width: 140px;
+}
+
+.books-showcase figcaption {
+    font-size: 0.82rem;
+    color: var(--color-medium-green);
+    margin-top: 6px;
+    font-weight: 500;
+}
+
+/* ==========================================
+   نقل قول
+   ========================================== */
+
+blockquote {
+    background: linear-gradient(135deg, #f8f4ed, #f0ece2);
+    border-right: 5px solid var(--color-gold);
+    border-left: none;
+    padding: 18px 22px 18px 18px;
+    margin: 20px 0;
+    font-style: italic;
+    color: var(--color-dark-green);
+    border-radius: 0 4px 4px 0;
+    position: relative;
+}
+
+blockquote::before {
+    content: '❝';
+    font-size: 2.5rem;
+    color: var(--color-gold);
+    opacity: 0.5;
+    position: absolute;
+    top: -5px;
+    left: 10px;
+    font-style: normal;
+}
+
+blockquote cite {
+    display: block;
+    margin-top: 8px;
+    font-size: 0.85rem;
+    color: var(--color-medium-green);
+    font-style: normal;
+    font-weight: 500;
+}
+
+q {
+    color: var(--color-dark-green);
+    font-style: italic;
+    font-weight: 500;
+}
+
+q::before { content: '«'; }
+q::after  { content: '»'; }
+
+/* ==========================================
+   لیست‌ها
+   ========================================== */
+
+.styled-list {
+    padding-right: 20px;
+    margin: 12px 0;
+}
+
+.styled-list li {
+    margin-bottom: 8px;
+    font-size: 0.96rem;
+    line-height: 1.7;
+    position: relative;
+}
+
+ul.styled-list li::marker {
+    color: var(--color-gold);
+    font-size: 1.1rem;
+}
+
+ol.styled-list li::marker {
+    color: var(--color-medium-green);
+    font-weight: 700;
+}
+
+/* ==========================================
+   جداول
+   ========================================== */
+
+.table-wrap {
+    overflow-x: auto;
+    margin: 20px 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.93rem;
+}
+
+table caption {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--color-dark-green);
+    margin-bottom: 10px;
+    text-align: center;
+    padding: 8px;
+}
+
+thead {
+    background-color: var(--color-dark-green);
+    color: var(--color-gold);
+}
+
+thead th {
+    padding: 12px 16px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 0.92rem;
+    border: 1px solid var(--color-medium-green);
+}
+
+tbody tr {
+    background-color: var(--color-white);
+    transition: background-color 0.15s;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f7f2;
+}
+
+tbody tr:hover {
+    background-color: var(--color-light-green);
+}
+
+tbody td {
+    padding: 11px 16px;
+    text-align: center;
+    border: 1px solid #ddd;
+    color: var(--color-text);
+}
+
+tfoot {
+    background-color: var(--color-light-green);
+}
+
+tfoot td {
+    padding: 10px 16px;
+    font-size: 0.85rem;
+    color: var(--color-medium-green);
+    text-align: center;
+    font-style: italic;
+}
+
+/* ==========================================
+   کارت کتاب
+   ========================================== */
+
+.books-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    gap: 25px;
+    margin: 20px 0;
+}
+
+.book-card {
+    background: var(--color-white);
+    border: 1px solid var(--color-light-green);
+    border-radius: 6px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: var(--shadow);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.book-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 18px rgba(11, 61, 46, 0.2);
+}
+
+.book-card img {
+    width: 110px;
+    height: 155px;
+    object-fit: cover;
+    border: 2px solid var(--color-gold);
+    border-radius: 3px;
+    margin-bottom: 12px;
+}
+
+.book-card h3 {
+    color: var(--color-dark-green);
+    font-size: 1rem;
+    margin-bottom: 5px;
+    margin-top: 0;
+}
+
+.book-card .author {
+    color: var(--color-medium-green);
+    font-size: 0.85rem;
+    margin-bottom: 8px;
+    font-style: italic;
+}
+
+.book-card .desc {
+    font-size: 0.83rem;
+    color: var(--color-text-light);
+    line-height: 1.7;
+    text-align: right;
+}
+
+.book-card .genre {
+    display: inline-block;
+    background: var(--color-light-green);
+    color: var(--color-dark-green);
+    font-size: 0.75rem;
+    padding: 2px 10px;
+    border-radius: 10px;
+    margin-top: 8px;
+    font-weight: 500;
+}
+
+/* ==========================================
+   تگ‌های متنی
+   ========================================== */
+
+strong { color: var(--color-dark-green); }
+em { color: var(--color-medium-green); font-style: italic; }
+mark { background-color: #fff3cd; padding: 0 4px; border-radius: 2px; }
+del { color: #999; }
+ins { text-decoration: underline; color: var(--color-medium-green); text-decoration-color: var(--color-gold); }
+abbr { border-bottom: 1px dotted var(--color-gold); cursor: help; }
+
+/* ==========================================
+   فرم
+   ========================================== */
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 600;
+    color: var(--color-dark-green);
+    margin-bottom: 6px;
+    font-size: 0.93rem;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px 14px;
+    border: 1px solid #bbb;
+    border-radius: 4px;
+    font-family: 'Vazirmatn', Tahoma, sans-serif;
+    font-size: 0.93rem;
+    background: #fdfcf9;
+    color: var(--color-text);
+    direction: rtl;
+    transition: border-color 0.2s;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--color-medium-green);
+    box-shadow: 0 0 0 3px rgba(31, 92, 74, 0.1);
+}
+
+.form-group textarea {
+    height: 130px;
+    resize: vertical;
+}
+
+.btn-submit {
+    background-color: var(--color-dark-green);
+    color: var(--color-gold);
+    padding: 12px 35px;
+    border: 2px solid var(--color-gold);
+    border-radius: 4px;
+    font-family: 'Vazirmatn', Tahoma, sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.btn-submit:hover {
+    background-color: var(--color-gold);
+    color: var(--color-dark-green);
+}
+
+/* ==========================================
+   دکمه تغییر رنگ (JS)
+   ========================================== */
+
+.btn-theme {
+    background-color: var(--color-medium-green);
+    color: var(--color-cream);
+    padding: 9px 22px;
+    border: 1px solid var(--color-gold);
+    border-radius: 4px;
+    font-family: 'Vazirmatn', Tahoma, sans-serif;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btn-theme:hover {
+    background-color: var(--color-gold);
+    color: var(--color-dark-green);
+}
+
+/* ==========================================
+   بخش ویژه کتاب ایرانی / جهانی
+   ========================================== */
+
+.book-detail {
+    display: flex;
+    gap: 22px;
+    align-items: flex-start;
+    padding: 22px 0;
+    border-bottom: 1px solid var(--color-light-green);
+}
+
+.book-detail:last-child {
+    border-bottom: none;
+}
+
+.book-detail img {
+    width: 120px;
+    height: 168px;
+    flex-shrink: 0;
+    border: 2px solid var(--color-gold);
+    border-radius: 3px;
+    box-shadow: 3px 3px 10px rgba(11, 61, 46, 0.2);
+}
+
+.book-detail-info {
+    flex: 1;
+}
+
+.book-detail-info h3 {
+    color: var(--color-dark-green);
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    margin-top: 0;
+}
+
+.book-detail-info .meta {
+    font-size: 0.85rem;
+    color: var(--color-medium-green);
+    margin-bottom: 10px;
+}
+
+/* ==========================================
+   فوتر
+   ========================================== */
+
+footer {
+    background-color: var(--color-dark-green);
+    color: var(--color-light-green);
+    text-align: center;
+    padding: 28px 20px;
+    border-top: 3px solid var(--color-gold);
+    margin-top: 40px;
+}
+
+footer p {
+    margin-bottom: 6px;
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: var(--color-gold);
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 14px;
+    list-style: none;
+    padding: 0;
+}
+
+/* ==========================================
+   ریسپانسیو
+   ========================================== */
+
+@media (max-width: 700px) {
+    .header-top { padding: 15px 18px; }
+    .site-title-area h1 { font-size: 1.6rem; }
+    nav ul li a { padding: 10px 14px; font-size: 0.88rem; }
+    main { padding: 0 14px; margin: 20px auto; }
+    .books-grid { grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 15px; }
+    .book-detail { flex-direction: column; align-items: center; }
+    .book-detail img { width: 100px; height: 140px; }
+    .section { padding: 18px; }
+}
+.dark {
+    background-color: #1a1a1a;
+    color: white;
+}
+.theme-btn {
+    background: transparent;
+    border: 2px solid #D8E3D2; /* کرم روشن هماهنگ با سبز زیتونی */
+    color: #D8E3D2;
+    padding: 6px 14px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    font-family: inherit;
+    transition: 0.3s ease;
+}
+
+/* هاور */
+.theme-btn:hover {
+    background: #D8E3D2;
+    color: #1F5C4A; /* سبز زیتونی */
+    transform: scale(1.05);
+}
+
+/* حالت فعال (Dark Mode اگر خواستی) */
+.dark .theme-btn {
+    border-color: #C2A878;
+    color: #C2A878;
+}
+
+.dark .theme-btn:hover {
+    background: #C2A878;
+    color: #0B3D2E;
+}

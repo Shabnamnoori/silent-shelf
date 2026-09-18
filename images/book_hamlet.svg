@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="280" viewBox="0 0 200 280">
+  <defs>
+    <linearGradient id="bgbook_hamlet" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1A1A1A;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1A1A1ACC;stop-opacity:1" />
+    </linearGradient>
+    <pattern id="patternbook_hamlet" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="10" cy="10" r="1" fill="#C2A878" opacity="0.15"/>
+    </pattern>
+  </defs>
+  <!-- Background -->
+  <rect width="200" height="280" fill="url(#bgbook_hamlet)"/>
+  <rect width="200" height="280" fill="url(#patternbook_hamlet)"/>
+  <!-- Spine effect -->
+  <rect x="0" y="0" width="12" height="280" fill="#C2A878" opacity="0.3"/>
+  <!-- Top decoration -->
+  <rect x="12" y="0" width="188" height="5" fill="#C2A878" opacity="0.6"/>
+  <!-- Bottom decoration -->
+  <rect x="12" y="275" width="188" height="5" fill="#C2A878" opacity="0.6"/>
+  <!-- Ornamental frame -->
+  <rect x="20" y="15" width="165" height="250" fill="none" stroke="#C2A878" stroke-width="1" opacity="0.4" rx="3"/>
+  <rect x="25" y="20" width="155" height="240" fill="none" stroke="#C2A878" stroke-width="0.5" opacity="0.3" rx="2"/>
+  <!-- Corner ornaments -->
+  <circle cx="25" cy="25" r="4" fill="#C2A878" opacity="0.5"/>
+  <circle cx="175" cy="25" r="4" fill="#C2A878" opacity="0.5"/>
+  <circle cx="25" cy="255" r="4" fill="#C2A878" opacity="0.5"/>
+  <circle cx="175" cy="255" r="4" fill="#C2A878" opacity="0.5"/>
+  <!-- Book icon -->
+  <rect x="75" y="40" width="50" height="55" rx="3" fill="none" stroke="#C2A878" stroke-width="1.5" opacity="0.7"/>
+  <line x1="100" y1="40" x2="100" y2="95" stroke="#C2A878" stroke-width="1" opacity="0.5"/>
+  <line x1="82" y1="52" x2="95" y2="52" stroke="#C2A878" stroke-width="1" opacity="0.4"/>
+  <line x1="82" y1="60" x2="95" y2="60" stroke="#C2A878" stroke-width="1" opacity="0.4"/>
+  <line x1="82" y1="68" x2="95" y2="68" stroke="#C2A878" stroke-width="1" opacity="0.4"/>
+  <line x1="105" y1="52" x2="118" y2="52" stroke="#C2A878" stroke-width="1" opacity="0.4"/>
+  <line x1="105" y1="60" x2="118" y2="60" stroke="#C2A878" stroke-width="1" opacity="0.4"/>
+  <line x1="105" y1="68" x2="118" y2="68" stroke="#C2A878" stroke-width="1" opacity="0.4"/>
+  <!-- Title area background -->
+  <rect x="30" y="100" width="140" height="68" fill="#C2A878" opacity="0.1" rx="3"/>
+  <!-- Title text -->
+  <text x="100" y="110" font-family="Tahoma, Arial" font-size="22" font-weight="bold" fill="#C2A878" text-anchor="middle" direction="rtl">هملت</text>
+
+  <!-- Divider -->
+  <line x1="50" y1="150" x2="150" y2="150" stroke="#C2A878" stroke-width="1" opacity="0.5"/>
+  <!-- Author -->
+  <text x="100" y="175" font-family="Tahoma, Arial" font-size="13" fill="#C2A878" text-anchor="middle" opacity="0.9" direction="rtl">ویلیام شکسپیر</text>
+  <!-- Year -->
+  <text x="100" y="265" font-family="Tahoma, Arial" font-size="11" fill="#C2A878" text-anchor="middle" opacity="0.6">1603</text>
+  <!-- Decorative bottom element -->
+  <ellipse cx="100" cy="250" rx="30" ry="5" fill="none" stroke="#C2A878" stroke-width="0.5" opacity="0.3"/>
+</svg>

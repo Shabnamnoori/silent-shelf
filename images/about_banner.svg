@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="200" viewBox="0 0 600 200">
+  <rect width="600" height="200" fill="#F5F1E8"/>
+  <rect x="0" y="0" width="600" height="5" fill="#0B3D2E"/>
+  <rect x="0" y="195" width="600" height="5" fill="#0B3D2E"/>
+  <text x="300" y="90" font-family="Tahoma, Arial" font-size="28" font-weight="bold" fill="#0B3D2E" text-anchor="middle" direction="rtl">درباره قفسه بی‌صدا</text>
+  <line x1="150" y1="105" x2="450" y2="105" stroke="#C2A878" stroke-width="2"/>
+  <text x="300" y="140" font-family="Tahoma, Arial" font-size="15" fill="#1F5C4A" text-anchor="middle" direction="rtl">جایی برای کتاب‌دوستان واقعی</text>
+  <circle cx="100" cy="100" r="30" fill="#0B3D2E" opacity="0.1"/>
+  <circle cx="500" cy="100" r="30" fill="#0B3D2E" opacity="0.1"/>
+</svg>

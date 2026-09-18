@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>قفسه بی‌صدا - صفحه اصلی</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ==================== هدر ==================== -->
+<header>
+    <div class="header-top">
+        <a href="index.html" class="logo-area">
+            <img src="images/library_main.png" alt="لوگو قفسه بی‌صدا" title="قفسه بی‌صدا" class="logo-img">
+            <div class="site-title-area">
+                <h1>قفسه بی‌صدا</h1>
+                <p>کتابخانه‌ای آرام برای دوستداران ادبیات</p>
+            </div>
+        </a>
+        <button class="theme-btn" onclick="toggleTheme()">🌙 / ☀️</button>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="index.html" class="active">🏠 صفحه اصلی</a></li>
+            <li><a href="books.html">📚 کتاب‌ها</a></li>
+            <li><a href="iranian-classics.html">🇮🇷 کلاسیک ایرانی</a></li>
+            <li><a href="world-classics.html">🌍 کلاسیک جهانی</a></li>
+            <li><a href="about.html">ℹ️ درباره ما</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- ==================== محتوای اصلی ==================== -->
+<main>
+
+    <!-- بنر کتابخانه -->
+    <div class="page-banner">
+        <img src="images/library_hero.svg" alt="قفسه‌های کتابخانه" title="قفسه بی‌صدا - کتابخانه کلاسیک">
+    </div>
+
+    <!-- خوش‌آمدگویی -->
+    <div class="section">
+        <h2>🌿 به قفسه بی‌صدا خوش آمدید</h2>
+
+        <p id="welcome-msg" data-index="0">
+            کتاب بخوانید، دنیاهای تازه کشف کنید.
+        </p>
+        <button class="btn-theme" onclick="changeWelcomeText()" style="margin-bottom:16px;">پیام بعدی 💬</button>
+
+        <p>
+            <strong>قفسه بی‌صدا</strong> فضایی آرام و سنتی است که در آن کتاب‌های برگزیده ایرانی و جهانی
+            با احترام و دقت معرفی می‌شوند. این مجموعه برای کسانی ساخته شده که
+            <em>کتاب را نه برای تفریح، بلکه برای زندگی</em> می‌خوانند.
+        </p>
+        <p>
+            در اینجا با آثاری آشنا می‌شوید که <mark>آزمون زمان را پس داده‌اند</mark>؛
+            از شاهنامه فردوسی تا رمان‌های قرن بیستم، همه در کنار هم
+            <strong>در سکوت و وقار</strong> منتظر شما هستند.
+        </p>
+
+        <!-- نقل قول ادبی -->
+        <blockquote>
+            «کتاب، خردمندترین همدمی است که انسان می‌تواند داشته باشد؛
+            زیرا هیچ‌گاه پرحرفی نمی‌کند و هر بار که به آن مراجعه می‌کنید،
+            چیز تازه‌ای برای گفتن دارد.»
+            <cite>— اقتباس از سخنان بزرگان</cite>
+        </blockquote>
+    </div>
+
+    <!-- تصاویر نمایشی کتاب‌ها -->
+    <div class="section">
+        <h2>📖 نگاهی به قفسه‌ها</h2>
+        <div class="books-showcase">
+            <figure>
+                <img src="images/buf_e_kur.svg" alt="بوف کور - صادق هدایت" title="بوف کور" class="img-book">
+                <figcaption>بوف کور</figcaption>
+            </figure>
+            <figure>
+                <img src="images/savushun.svg" alt="سووشون - سیمین دانشور" title="سووشون" class="img-book">
+                <figcaption>سووشون</figcaption>
+            </figure>
+            <figure>
+                <img src="images/divan_hafez.svg" alt="دیوان حافظ" title="دیوان حافظ" class="img-book">
+                <figcaption>دیوان حافظ</figcaption>
+            </figure>
+            <figure>
+                <img src="images/shahname.svg" alt="شاهنامه فردوسی" title="شاهنامه" class="img-book">
+                <figcaption>شاهنامه</figcaption>
+            </figure>
+            <figure>
+                <img src="images/book_1984.svg" alt="1984 - جورج اورول" title="1984" class="img-book">
+                <figcaption>۱۹۸۴</figcaption>
+            </figure>
+            <figure>
+                <img src="images/book_littleprince.svg" alt="شازده کوچولو" title="شازده کوچولو" class="img-book">
+                <figcaption>شازده کوچولو</figcaption>
+            </figure>
+        </div>
+    </div>
+
+    <!-- لیست کتاب‌های پیشنهادی -->
+    <div class="section">
+        <h2>📌 پیشنهادهای ویژه این هفته</h2>
+
+        <h3>◾ کتاب‌های ایرانی پیشنهادی:</h3>
+        <ul class="styled-list">
+            <li><strong>بوف کور</strong> — نوشته <em>صادق هدایت</em>، شاهکار ادبیات مدرن ایران</li>
+            <li><strong>سووشون</strong> — نوشته <em>سیمین دانشور</em>، نخستین رمان بلند زن ایرانی</li>
+            <li><strong>سمفونی مردگان</strong> — نوشته <em>عباس معروفی</em>، روایتی درخشان از دهه شصت</li>
+            <li><strong>چشم‌هایش</strong> — نوشته <em>بزرگ علوی</em>، داستان عشق و مقاومت</li>
+            <li><strong>شاهنامه</strong> — سروده <em>ابوالقاسم فردوسی</em>، اثر جاودانه ملی ایران</li>
+        </ul>
+
+        <h3>◾ کتاب‌های جهانی پیشنهادی:</h3>
+        <ul class="styled-list">
+            <li><strong>۱۹۸۴</strong> — نوشته <em>جورج اورول</em>، رمانی تأثیرگذار درباره تمامیت‌خواهی</li>
+            <li><strong>شازده کوچولو</strong> — نوشته <em>آنتوان دو سنت‌اگزوپری</em>، کتابی برای همه سنین</li>
+            <li><strong>صد سال تنهایی</strong> — نوشته <em>گابریل گارسیا مارکز</em>، برنده جایزه نوبل</li>
+            <li><strong>غرور و تعصب</strong> — نوشته <em>جین آستن</em>، کلاسیک عاشقانه انگلیسی</li>
+            <li><strong>جنایت و مکافات</strong> — نوشته <em>فئودور داستایوفسکی</em>، کاوش در روح بشر</li>
+        </ul>
+
+        <h3>◾ ترتیب خواندن برای تازه‌کاران:</h3>
+        <ol class="styled-list">
+            <li>شازده کوچولو — برای ورود به دنیای ادبیات</li>
+            <li>بوف کور — آشنایی با ادبیات مدرن ایران</li>
+            <li>۱۹۸۴ — فهم ادبیات دیستوپیایی</li>
+            <li>صد سال تنهایی — تجربه رئالیسم جادویی</li>
+            <li>شاهنامه (گزیده) — پیوند با میراث ملی</li>
+        </ol>
+    </div>
+
+    <!-- جدول کتاب‌ها -->
+    <div class="section">
+        <h2>📋 فهرست کتاب‌های معرفی‌شده</h2>
+        <div class="table-wrap">
+            <table>
+                <caption>جدول کتاب‌های برگزیده قفسه بی‌صدا</caption>
+                <thead>
+                    <tr>
+                        <th>ردیف</th>
+                        <th>نام کتاب</th>
+                        <th>نویسنده</th>
+                        <th>ژانر</th>
+                        <th>سال انتشار</th>
+                        <th>زبان اصلی</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>۱</td>
+                        <td><strong>بوف کور</strong></td>
+                        <td>صادق هدایت</td>
+                        <td>رمان مدرن</td>
+                        <td>۱۹۳۷</td>
+                        <td>فارسی</td>
+                    </tr>
+                    <tr>
+                        <td>۲</td>
+                        <td><strong>سووشون</strong></td>
+                        <td>سیمین دانشور</td>
+                        <td>رمان اجتماعی</td>
+                        <td>۱۳۴۸</td>
+                        <td>فارسی</td>
+                    </tr>
+                    <tr>
+                        <td>۳</td>
+                        <td><strong>شاهنامه</strong></td>
+                        <td>فردوسی</td>
+                        <td>حماسی</td>
+                        <td>۱۰۱۰ م</td>
+                        <td>فارسی</td>
+                    </tr>
+                    <tr>
+                        <td>۴</td>
+                        <td><strong>دیوان حافظ</strong></td>
+                        <td>حافظ شیرازی</td>
+                        <td>شعر غزل</td>
+                        <td>قرن ۱۴</td>
+                        <td>فارسی</td>
+                    </tr>
+                    <tr>
+                        <td>۵</td>
+                        <td><strong>۱۹۸۴</strong></td>
+                        <td>جورج اورول</td>
+                        <td>دیستوپیا</td>
+                        <td>۱۹۴۹</td>
+                        <td>انگلیسی</td>
+                    </tr>
+                    <tr>
+                        <td>۶</td>
+                        <td><strong>شازده کوچولو</strong></td>
+                        <td>آنتوان دو سنت‌اگزوپری</td>
+                        <td>فلسفی</td>
+                        <td>۱۹۴۳</td>
+                        <td>فرانسوی</td>
+                    </tr>
+                    <tr>
+                        <td>۷</td>
+                        <td><strong>صد سال تنهایی</strong></td>
+                        <td>گارسیا مارکز</td>
+                        <td>رئالیسم جادویی</td>
+                        <td>۱۹۶۷</td>
+                        <td>اسپانیایی</td>
+                    </tr>
+                    <tr>
+                        <td>۸</td>
+                        <td><strong>جنایت و مکافات</strong></td>
+                        <td>داستایوفسکی</td>
+                        <td>رمان روانشناختی</td>
+                        <td>۱۸۶۶</td>
+                        <td>روسی</td>
+                    </tr>
+                    <tr>
+                        <td>۹</td>
+                        <td><strong>سمفونی مردگان</strong></td>
+                        <td>عباس معروفی</td>
+                        <td>رمان</td>
+                        <td>۱۳۶۸</td>
+                        <td>فارسی</td>
+                    </tr>
+                    <tr>
+                        <td>۱۰</td>
+                        <td><strong>غرور و تعصب</strong></td>
+                        <td>جین آستن</td>
+                        <td>رمان عاشقانه</td>
+                        <td>۱۸۱۳</td>
+                        <td>انگلیسی</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="6">این فهرست شامل برگزیده‌ترین آثار ادبیات کلاسیک ایرانی و جهانی است.</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+
+    <!-- لینک به صفحات دیگر -->
+    <div class="section">
+        <h2>🔗 مشاهده بیشتر</h2>
+        <p>برای آشنایی بیشتر با کتاب‌ها به صفحات زیر بروید:</p>
+        <ul class="styled-list">
+            <li>
+                <a href="books.html" title="مشاهده تمام کتاب‌ها">📚 فهرست کامل کتاب‌ها</a>
+                — <ins>جدید</ins> معرفی ۱۵ اثر برگزیده
+            </li>
+            <li>
+                <a href="iranian-classics.html" title="کلاسیک‌های ایرانی">🇮🇷 کلاسیک‌های ایرانی</a>
+                — آثار جاودانه ادبیات فارسی
+            </li>
+            <li>
+                <a href="world-classics.html" title="کلاسیک‌های جهانی">🌍 کلاسیک‌های جهانی</a>
+                — بهترین آثار ادبیات جهان
+            </li>
+            <li>
+                <a href="about.html" title="درباره سایت">ℹ️ درباره قفسه بی‌صدا</a>
+                — آشنایی با هدف این مجموعه
+            </li>
+        </ul>
+    </div>
+
+</main>
+
+<!-- ==================== فوتر ==================== -->
+<footer>
+    <ul class="footer-nav">
+        <li><a href="index.html">صفحه اصلی</a></li>
+        <li><a href="books.html">کتاب‌ها</a></li>
+        <li><a href="iranian-classics.html">کلاسیک ایرانی</a></li>
+        <li><a href="world-classics.html">کلاسیک جهانی</a></li>
+        <li><a href="about.html">درباره ما</a></li>
+    </ul>
+    <p>© ۱۴۰۳ قفسه بی‌صدا</p>
+    <p style="font-size:0.8rem; opacity:0.7; margin-top:5px;">ساخته شده با عشق به کتاب و ادبیات 📚</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
