@@ -8,8 +8,7 @@ A clean Persian RTL digital bookshelf featuring Iranian and world classics, buil
 
 🌐 Live Demo
 
-👉 "View Live Website" 
-![Silent Shelf Preview](https://shabnamnoori.github.io/silent-shelf/)
+👉 "View Live Website" (https://shabnamnoori.github.io/silent-shelf/)
 
 نسخه آنلاین پروژه از طریق GitHub Pages در دسترس است.
 
